@@ -1,5 +1,5 @@
 {
-  "name": "sitemap-generator",
+  "name": "@smileeio/sitemap-generator",
   "version": "0.0.0-semantically-released",
   "description": "Easily create XML sitemaps for your website.",
   "homepage": "https://github.com/lgraubner/sitemap-generator",
