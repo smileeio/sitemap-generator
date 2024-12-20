@@ -1,6 +1,6 @@
 {
   "name": "@smileeio/sitemap-generator",
-  "version": "0.0.0-semantically-released",
+  "version": "0.0.0-smileeio.1",
   "description": "Easily create XML sitemaps for your website.",
   "homepage": "https://github.com/lgraubner/sitemap-generator",
   "author": "Lars Graubner <mail@larsgraubner.de> (https://larsgraubner.com)",
