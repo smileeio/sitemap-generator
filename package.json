@@ -31,7 +31,7 @@
     "lodash": "4.17.20",
     "mitt": "1.1.3",
     "normalize-url": "3.3.0",
-    "simplecrawler": "1.1.9",
+    "@smileeio/simplecrawler": "https://github.com/smileeio/simplecrawler#a66eb17390b9a7804f16558b842ef5ea03a6f58e",
     "url-parse": "1.4.7"
   },
   "engines": {
