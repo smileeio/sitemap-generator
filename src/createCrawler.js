@@ -1,4 +1,4 @@
-const Crawler = require('simplecrawler');
+const Crawler = require('@smileeio/simplecrawler');
 const has = require('lodash/has');
 
 const discoverResources = require('./discoverResources');

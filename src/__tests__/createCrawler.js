@@ -1,5 +1,5 @@
 const createCrawler = require('../createCrawler');
-const Crawler = require('simplecrawler');
+const Crawler = require('@smileeio/simplecrawler');
 const parse = require('url-parse');
 
 describe('#createCrawler', () => {
@@ -14,7 +14,7 @@ describe('#createCrawler', () => {
 
   test('should apply options to crawler', () => {
     const options = {
-      maxDepth: 2,
+      maxDepth: 2
     };
     const crawler = createCrawler(parse('http://example.com'), options);
     expect(crawler).toHaveProperty('maxDepth', 2);
