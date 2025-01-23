@@ -1,6 +1,6 @@
 {
   "name": "@smileeio/sitemap-generator",
-  "version": "0.0.0-smileeio.1",
+  "version": "0.0.0-smileeio.2",
   "description": "Easily create XML sitemaps for your website.",
   "homepage": "https://github.com/lgraubner/sitemap-generator",
   "author": "Lars Graubner <mail@larsgraubner.de> (https://larsgraubner.com)",
@@ -31,7 +31,7 @@
     "lodash": "4.17.20",
     "mitt": "1.1.3",
     "normalize-url": "3.3.0",
-    "@smileeio/simplecrawler": "https://github.com/smileeio/simplecrawler.git#9f4ab4647a649b763717ab1149b49312a3b96a8f",
+    "@smileeio/simplecrawler": "https://github.com/smileeio/simplecrawler.git#7a0bb61eb6f2e0415b5fe7ee399d4b9a78624b60",
     "url-parse": "1.4.7"
   },
   "engines": {
