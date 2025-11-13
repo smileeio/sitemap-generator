@@ -29,7 +29,8 @@ module.exports = function SitemapGenerator(uri, opts) {
     changeFreq: '',
     priorityMap: [],
     ignoreAMP: true,
-    ignore: null
+    ignore: null,
+    pruneCompletedQueueItems: true
   };
 
   if (!uri) {
