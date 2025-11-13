@@ -201,6 +201,21 @@ Example:
 [1.0, 0.8, 0.6, 0.4, 0.2, 0]
 ```
 
+### pruneCompletedQueueItems
+
+Type: `boolean`  
+Default: `true`
+
+Controls whether completed queue items are pruned to free memory. When enabled, the crawler removes queue item data (headers, response bodies, etc.) after the URL has been processed and emitted to the sitemap. This significantly reduces memory usage during large crawls while maintaining URL deduplication. Set to `false` to preserve the legacy behavior where all queue items are retained in memory.
+
+Example:
+
+```javascript
+const generator = SitemapGenerator('http://example.com', {
+  pruneCompletedQueueItems: false // Disable pruning for debugging
+})
+```
+
 ### userAgent
 
 Type: `string`  
