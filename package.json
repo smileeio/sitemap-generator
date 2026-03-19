@@ -1,8 +1,7 @@
 {
   "name": "@smileeio/sitemap-generator",
   "version": "0.0.0-smileeio.2",
-  "description": "Easily create XML sitemaps for your website.",
-  "homepage": "https://github.com/lgraubner/sitemap-generator",
+  "homepage": "https://github.cm/lgraubner/sitemap-generator",
   "author": "Lars Graubner <mail@larsgraubner.de> (https://larsgraubner.com)",
   "keywords": [
     "sitemap",
@@ -53,8 +52,7 @@
     "lint": "eslint src",
     "test": "jest",
     "test:watch": "npm test -- --watch",
-    "flow": "flow",
-    "check:meripelastus-sitemaps": "node scripts/check-meripelastus-sitemaps.js"
+    "flow": "flow"
   },
   "lint-staged": {
     "*.js": [
