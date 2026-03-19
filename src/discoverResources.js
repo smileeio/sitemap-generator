@@ -2,7 +2,23 @@ const url = require('url');
 const cheerio = require('cheerio');
 
 module.exports = (buffer, queueItem) => {
-  const $ = cheerio.load(buffer.toString('utf8'));
+  const page = buffer.toString('utf8');
+
+  if (/<\s*(sitemapindex|urlset)\b/i.test(page)) {
+    const $xml = cheerio.load(page, { xmlMode: true });
+
+    return $xml('loc')
+      .map(function iteratee() {
+        return $xml(this)
+          .text()
+          .trim()
+          .replace(/(#.*)$/, '');
+      })
+      .get()
+      .filter(Boolean);
+  }
+
+  const $ = cheerio.load(page);
 
   const metaRobots = $('meta[name="robots"]');
 
@@ -26,7 +42,7 @@ module.exports = (buffer, queueItem) => {
 
     // remove anchors
     href = href.replace(/(#.*)$/, '');
-    
+
     //remove basic authentication
     href = href.replace(/^\/?([^/]*@)/, '');
 
